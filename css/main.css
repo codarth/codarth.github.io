@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    /*        border: 2px solid red;*/
 }
 
 html,
@@ -10,7 +9,8 @@ body {
     height: 100%;
     margin: auto;
     font-size: 100%;
-    min-width: 320px
+    min-width: 320px;
+    background-color: #969696;
 }
 
 img {
@@ -26,18 +26,17 @@ img {
 }
 
 .full_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
 }
 
 .main-sidebar {
-    grid-column: 1;
     background-color: #555;
     color: #ffffff;
-    /*    display: block;*/
     position: fixed;
     width: 277px;
     height: 100%;
+    overflow-y: auto;
+    display: block;
 }
 
 .logo {
@@ -62,8 +61,7 @@ img {
     text-align: center;
     padding: 0;
     margin: 0;
-    list-style: none;
-    /*position: fixed;*/
+    display: block;
 }
 
     .mainmenu li {
@@ -90,40 +88,20 @@ li {
     display: list-item;
 }
 
-    li.home a.active {
-        color: #4ae;
-    }
-
     li.home a {
         border-color: #4ae;
-    }
-
-    li.about a.active {
-        color: #f90;
     }
 
     li.about a {
         border-color: #f90;
     }
 
-    li.skills a.active {
-        color: #94e;
-    }
-
     li.skills a {
         border-color: #94e;
     }
 
-    li.portfolio a.active {
-        color: #3e9;
-    }
-
     li.portfolio a {
         border-color: #3e9;
-    }
-
-    li.contact a.active {
-        color: #e37;
     }
 
     li.contact a {
@@ -131,21 +109,8 @@ li {
     }
 
 .main-content {
-    grid-column: 2/-1;
-    /*    float: right;*/
-    /*    width: 80%;*/
-}
-
-.welcome {
-    background-image: url(../images/code-coding-computer-574071.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    float: left;
-    margin-bottom: 5px;
+    flex: 1;
+    margin-left: 277px;
 }
 
 .welcome-message {
@@ -336,15 +301,12 @@ li {
         }
 
 @media only screen and (max-width: 1000px) {
-    #main-sidebar {
+    .main-sidebar {
         display: none;
-        width: 0%;
-        height: 0%;
     }
 
-    #main-content {
-        float: none;
-        width: 100%;
+    .main-content {
+        margin-left: 0;
     }
 
     .welcome {
