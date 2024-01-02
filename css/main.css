@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan|Open+Sans');
+
+* {
+    box-sizing: border-box;
+    /*        border: 2px solid red;*/
+}
+
+html,
+body {
+    height: 100%;
+    margin: auto;
+    font-size: 100%;
+    min-width: 320px
+}
+
+img {
+    width: 100%;
+}
+
+.kodchasan {
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.full_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.main-sidebar {
+    grid-column: 1;
+    background-color: #555;
+    color: #ffffff;
+    /*    display: block;*/
+    position: fixed;
+    width: 277px;
+    height: 100%;
+}
+
+.logo {
+    margin: 5vw 0;
+    background-color: #4ae;
+    padding: 1vw 2vw;
+}
+
+    .logo a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .logo p {
+        color: #bbeeff;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0;
+    }
+
+.mainmenu {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*position: fixed;*/
+}
+
+    .mainmenu li {
+        margin-bottom: 0.1vw;
+    }
+
+        .mainmenu li a {
+            color: white;
+            text-transform: uppercase;
+            display: block;
+            border-left: 1vw solid;
+            padding: 1vw 2vw;
+            background-color: #333;
+            transition: all 0.5s ease-in;
+            text-decoration: none;
+        }
+
+            .mainmenu li a:hover {
+                background-color: #111;
+                transition: all 1s ease-in;
+            }
+
+li {
+    display: list-item;
+}
+
+    li.home a.active {
+        color: #4ae;
+    }
+
+    li.home a {
+        border-color: #4ae;
+    }
+
+    li.about a.active {
+        color: #f90;
+    }
+
+    li.about a {
+        border-color: #f90;
+    }
+
+    li.skills a.active {
+        color: #94e;
+    }
+
+    li.skills a {
+        border-color: #94e;
+    }
+
+    li.portfolio a.active {
+        color: #3e9;
+    }
+
+    li.portfolio a {
+        border-color: #3e9;
+    }
+
+    li.contact a.active {
+        color: #e37;
+    }
+
+    li.contact a {
+        border-color: #e37;
+    }
+
+.main-content {
+    grid-column: 2/-1;
+    /*    float: right;*/
+    /*    width: 80%;*/
+}
+
+.welcome {
+    background-image: url(../images/code-coding-computer-574071.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.welcome-message {
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #4ae;
+    opacity: 1.0;
+}
+
+    .welcome-message h1 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 75px;
+    }
+
+    .welcome-message a {
+        color: #ffff;
+    }
+
+    .welcome-message p {
+        text-transform: uppercase;
+        width: 60%;
+        margin: 0 auto 30px auto;
+        font-size: 20px;
+    }
+
+        .welcome-message p a {
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+#main-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title-section {
+    border-top: 4px solid;
+    margin-bottom: 10px;
+}
+
+    .title-section h1 {
+        display: inline-block;
+        padding: 20px 35px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+#about {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+}
+
+    #about h1 {
+        background-color: #f90;
+    }
+
+    #about .title-section {
+        border-color: #f90;
+    }
+
+#skills {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+}
+
+    #skills .tags {
+        box-sizing: border-box;
+    }
+
+    #skills h1 {
+        background-color: #94e;
+    }
+
+    #skills .title-section {
+        border-color: #94e;
+    }
+
+        #skills .title-section ul {
+            list-style: none;
+        }
+
+        #skills .title-section li {
+            margin: 0 3px 3px 0;
+            display: inline-block;
+        }
+
+        #skills .title-section span {
+            display: inline-block;
+            border: 1px solid #000;
+            border-radius: 3px;
+            color: #000;
+            padding: 0 5px;
+            overflow: hidden;
+        }
+
+#portfolio {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+}
+
+    #portfolio h1 {
+        background-color: #3e9;
+    }
+
+    #portfolio .title-section {
+        border-color: #3e9;
+    }
+
+    #portfolio h2 {
+        width: 100%;
+        border-bottom-color: #3e9;
+        border-bottom-style: dashed;
+    }
+
+    #portfolio .Udemy img {
+        width: 300px;
+    }
+
+    #portfolio .GGJ img {
+        width: 300px;
+    }
+
+    #portfolio .NewMedia3030 .TTT {
+        width: 500px;
+    }
+
+    #portfolio .NewMedia3030 .Arach {
+        width: 200px;
+    }
+
+    #portfolio .NewMedia2015 a {
+        display: inline-block;
+        border: 0.1vw dashed #000;
+        border-radius: 1vw;
+        color: #000;
+        margin: 0.25vw;
+        padding: 0.1vw 1vw;
+        background-color: #3e9;
+    }
+
+    #portfolio .NewMedia2015 a {
+        text-decoration: none;
+        color: #000;
+    }
+
+        #portfolio .NewMedia2015 a:hover {
+            background-color: #4ae;
+            text-decoration: none;
+        }
+
+#contact {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+}
+
+    #contact h1 {
+        background-color: #e37;
+    }
+
+    #contact .title-section {
+        border-color: #e37;
+    }
+
+    #contact .info {
+        margin-bottom: 100px;
+    }
+
+        #contact .info a {
+            color: #fff;
+            background-color: #4ae;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin: 5px;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+
+@media only screen and (max-width: 1000px) {
+    #main-sidebar {
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+
+    #main-content {
+        float: none;
+        width: 100%;
+    }
+
+    .welcome {
+        height: 200px;
+    }
+
+    .welcome-message {
+        opacity: 0.8;
+    }
+
+        .welcome-message h1 {
+            font-size: 32px;
+        }
+
+        .welcome-message p {
+            width: 100%;
+        }
+}

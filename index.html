@@ -1,81 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,600,700,800">
+    <title>Cody Crawford</title>
     <meta charset="utf-8">
-    <title>Page Title</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <body>
-        <div id="app1">
-            <p>{{ message }}</p>
-            <p><input v-model="message"></p>
-        </div>
-        <div id="app2">
-            <ul>
-                <li v-for="x in todos">
-                    {{ x.text }}
-                </li>
-            </ul>
-        </div>
-        <div id="app1_2">
-            <h3>{{ message }}</h3>
-            <ul>
-                <li v-for="x in todolist">{{ x.text }}</li>
-            </ul>
-        </div>
-        <div id="app3">
-            <ol>
-                <todo-item 
-                    v-for="item in groceryList"
-                    v-bind:todo="item"
-                    v-bind:key="item.id"
-                ></todo-item>
-            </ol>
-        </div>
+    <meta name="keywords" content="Cody Crawford, portfolio, Lethbridge, student, Computer Science">
+    <meta name="description" content="This is the portfolio of Cody Crawford.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
-        <script>
-            var myVue = new Vue({
-                el: '#app1',
-                data: {message: 'Hello happy people!'}
-            })
-            
-            var vue2 = new Vue({
-                el: '#app2',
-                data: {
-                    todos: [
-                    {text: 'Item 1'},
-                    {text: 'Item 2'},
-                    {text: 'Item 3'},
-                    {text: 'Item 4'}
-                    ]
-                }
-            })
 
-            var vue1_2 = new Vue({
-                el: '#app1_2',
-                data:{
-                    message: 'App 1 and 2 combined',
-                    todolist: [
-                        {text: 'another item'},
-                        {text: 'some item'}
-                    ]
-                }
-            })
+</head>
 
-            Vue.component('todo-item', {
-                props: ['todo'],
-                template: '<li>{{ todo.text }}</li>'
-            })
-            
-            var app3 = new Vue({
-                el: '#app3',
-                data: {
-                    groceryList: [
-                    { id: 0, text: 'Vegetables' },
-                    { id: 1, text: 'Cheese' },
-                    { id: 2, text: 'Chips' }
-                    ]
-                }
-            })
-            
-        </script>
-    </body>
+<body>
+    <div class="full_wrapper">
+        <div class="main-sidebar kodchasan">
+            <div class="logo">
+                <a href="#home">
+                    <h1>Cody Crawford</h1>
+                </a>
+                <p>Welcome to my portfolio.</p>
+            </div>
+            <div class="navigation">
+                <ul class="mainmenu">
+                    <li class="home">
+                        <a href="#home" class="active">home</a>
+                    </li>
+                    <li class="about">
+                        <a href="#about" class>about me</a>
+                    </li>
+                    <li class="skills">
+                        <a href="#skills" class>skills</a>
+                    </li>
+                    <li class="portfolio">
+                        <a href="#portfolio" class>portfolio</a>
+                    </li>
+                    <li class="contact">
+                        <a href="#contact" class>contact</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="Construction">
+                <p>*I am always making changes here, adding my projects. Come back later and something may be different.</p>
+            </div>
+        </div>
+        <div class="main-content kodchasan">
+            <div id="home">
+                <div class="welcome">
+                    <div class="welcome-message">
+                        <h1>Good day!</h1>
+                        <p>I am a passionate, dedicated computer science specialist. I am always seeking to use and expand my skills.</p>
+<!--                        <p>I am a current Computer Science major with a New Media minor at the <a href="https://www.uleth.ca/">University of Lethbridge</a>. I will be graduating in december of 2018.</p>-->
+                    </div>
+                </div>
+            </div>
+            <div id="main-container">
+                <div id="about">
+                    <div class="title-section">
+                        <h1>The Me Section</h1>
+                        <p>As of December 2018, I graduated from the University of Lethbridge with a Bachelor of Science degree in Computer Science With a New Media minor.</p>
+                        <p>I have a deep passion for the game industry. Currently I am looking for a entry level position.</p>
+<!--
+                        <p>I have always had a passion for computers. I took some programming in high school and enjoyed making the computer do things I wanted them to do.</p>
+                        <p>Through out my academic career path, the school focused on C++. I have used other languages as well, C#, Python and Java being the more prominent. Web development with JavaScript and Vue.js are close behind.</p>
+                        <p>I am very passionate for games and game development. I thoroughly enjoy programming games. That is my greatest passion, to be a game programmer as a career.</p>
+                        <p>I am always looking to learn and grow. In school and out. I want to use what I learn and continue the learning journey.</p>
+-->
+<!--                        <p>Check out my <a href="/documents/Resume-CodyCrawford.pdf">Resume.</a></p>-->
+                        <p>Take a look at my <a href="https://github.com/codarth">GitHub</a>.</p>
+                    </div>
+                </div>
+                <div id="skills">
+                    <div class="title-section">
+                        <h1>Skills</h1>
+                        <div class="tags">
+                            <ul>
+                                <li><span>C/C++</span></li>
+                                <li><span>Java</span></li>
+                                <li><span>C#</span></li>
+                                <li><span>Python</span></li>
+                                <li><span>Linux</span></li>
+                                <li><span>Git</span></li>
+                                <li><span>HTML</span></li>
+                                <li><span>Vue.js</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>Unreal Engine 4</span></li>
+                                <li><span>Unity 3D</span></li>
+                                <li><span>Photoshop</span></li>
+                                <li><span>JavaScript</span></li>
+                                <li><span>OpenGL</span></li>
+                                <li><span>JIRA</span></li>
+                                <li><span>Visual Studio</span></li>
+                                <li><span>3DS Max</span></li>
+                                <li><span>Maya</span></li>
+                                <li><span>Blender</span></li>
+                                <li><span>Premier Pro</span></li>
+                            </ul>
+                            <ul>
+                                <li><span>Leadership</span></li>
+                                <li><span>Communication</span></li>
+                                <li><span>Collaboration</span></li>
+                                <li><span>Creative</span></li>
+                                <li><span>Critical thinking</span></li>
+                                <li><span>Logical thinking</span></li>
+                                <li><span>Troubleshooting</span></li>
+                                <li><span>Problem-solving</span></li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <p>Take a look at my <a href="https://github.com/codarth"><b>GitHub</b></a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolio">
+                    <div class="title-section">
+                        <h1>Portfolio</h1>
+                    </div>
+                    <div>
+                        <div class="Udemy">
+                            <h2>Udemy Courses</h2>
+                            <p>These are the Udemy courses I have completed with certificates</p>
+                            <h3>Unreal Engine C++ Developer: Learn C++ and Make Video Games</h3>
+                            <a href="https://www.udemy.com/certificate/UC-30RBLU9D/"> 
+                                <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-30RBLU9D.jpg?l=null" alt="Certicicate of Completion" />
+                            </a>
+                            <p>Click for Original</p>
+                        </div>
+                        <div class="MM">
+                            <h2>Midnight Mammoth</h2>
+                            <p>Midnight Mammoth is a up and coming video game company based out of Lethbridge, Alberta, Canada</p>
+                            <h3>Sad Robot</h3>
+                            <p>Sad Robot started as a course assignment and is now in the works of becoming a awesome game by Midnight Mammoth.<br>
+                            My Contribution so far is in the NPC AI.</p>
+                        </div>
+                        <div class="RisingSun">
+                            <h2>Rising Sun</h2>
+                            <p>Rising Sun is a project from Big L studio, A small start-up studio. I am one of the main programmers. </p>
+                            <p>Rising Sun is a story based RPG in the 15th(?) century Japan.</p>
+                        </div>
+                        <div class="GGJ">
+                            <h2>Global Game Jam 2019</h2>
+                            <p>Working in a team of two, with music and graphics from others, We created a Roomba game. A relaxing game where players are the roomba cleaning the rooms while keeping an eye on battery life. Go <a href="http://staging.appasaur.us/roomba-game/">here</a> to play.</p>
+                            <a href="http://staging.appasaur.us/roomba-game/">
+                                <img src="images/Roomba.png" alt="Roomba Game" />
+                            </a>
+                        </div>
+                        <div>
+                            <h2>Game of Life simulation</h2>
+                            <iframe width="480" height="270" src="https://www.youtube.com/embed/GrL3FCyWjkg" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+                            <p>Game of Life Simulation Based on <a href="https://www.youtube.com/watch?v=FWSR_7kZuYg">The Coding Train</a>'s expanation and <a href="https://www.youtube.com/redirect?redir_token=LiVkr7IAbaXkOdPQlu8QIYFnbgp8MTU0NjAzMzM0MkAxNTQ1OTQ2OTQy&q=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FConway%2527s_Game_of_Life&event=video_description&v=FWSR_7kZuYg">Conway's Game of Life</a> on Wikipedia.</p>
+                        </div>
+                        <div class="Abeyance">
+                            <h2>Video Game Production (NMED4710)</h2>
+                            <iframe width="480" height="270" src="https://www.youtube.com/embed/iVBR4h-L040?rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p>Inspired by surrealism, mental illness and disability, you play as a character who’s awoken into a mysterious world. With the help of a convenient companion, together you search for answers in order to survive. Our intentions with the game are to build off of and diverge from established RPG conventions. (Source: <a href="https://ulethnewmedia.com/student_showcase/abeyance/">Uleth New Media</a> department)</p>
+                        </div>
+                        <div class="NewMedia3030">
+                            <h2>3-D Computer Modeling and Animation (NMED3030)</h2>
+                            <h3>Model a Toy</h3>
+                            <p>I was to model a toy. I chose a Tonka Truck. </p>
+                            <img class="TTT" src="images/TonkaTruck.png" alt="Tonka Truck Toy" />
+                            <h3>Create a future gadget</h3>
+                            <p>In this assignment I was to create a futuristic gadget. Model and animate it. Also Create an poster to advertise it.</p>
+                            <img class="Arach" src="images/Crawford_Cody_A2_S2_Poster_Arachnopod.png" alt="Arachnopod Poster"/>
+                            <iframe width="480" height="270" src="https://www.youtube.com/embed/WAw9dAH9sGQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="NewMedia2015">
+                            <h2>Digital Drawing and Animation (NMED2015)</h2>
+                            <a href="images/BoxDraw.gif">Drawing a box on paper</a>
+                            <a href="images/courtship.gif">Animating a still image</a>
+                            <a href="images/ZombieRun.gif">2D stop motion animation</a>
+                            <a href="images/BowlingforZombies.gif">3d stop motion animation</a>
+                            <p>Some results from the Animation classes.</p>
+                        </div>
+                        <div class="NewMedia2030">
+                            <h2>Digital Video Production (NMED2030)</h2>
+                            <iframe width="480" height="270" src="https://www.youtube.com/embed/23RA2IosTdo?rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe width="480" height="270" src="https://www.youtube.com/embed/AVwt_25amcY?rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p>Video production class. Killer Bunnies Advertisment and Missing milk documentry.</p>
+                        </div>
+                        <div class="NewMedia1000">
+                            <h2>Introduction to New Media - "Tattoo" - the landslide of future technology (NMED1000)</h2>
+                            <iframe width="480" height="270" src="https://www.youtube.com/embed/yt5n6zInggQ?rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p>One of my first projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact">
+                    <div class="title-section">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="info">
+                        <a href="contact@codyccrawford.com"> Email</a>
+                        <a href="https://www.linkedin.com/in/codycrawford79/">LinkedIn</a>
+                        <a href="https://www.youtube.com/channel/UCw65XwGSnvU2lGrxcjJrhVg">YouTube</a>
+                        <a href="https://twitter.com/GamesWithCody">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>
