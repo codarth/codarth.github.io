@@ -33,7 +33,7 @@ img {
     background-color: #555;
     color: #ffffff;
     position: fixed;
-    width: 277px;
+    width: 20%;
     height: 100%;
     overflow-y: auto;
     display: block;
@@ -96,6 +96,10 @@ li {
         border-color: #f90;
     }
 
+    li.education a {
+        border-color: #bb1;
+    }
+
     li.skills a {
         border-color: #94e;
     }
@@ -110,7 +114,7 @@ li {
 
 .main-content {
     flex: 1;
-    margin-left: 277px;
+    margin-left: 20%;
 }
 
 .welcome-message {
@@ -180,6 +184,19 @@ li {
         border-color: #f90;
     }
 
+#education {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+}
+    #education h1 {
+        background-color: #bb1;
+    }
+
+    #education .title-section {
+        border-color: #bb1;
+    }
+
 #skills {
     display: inline-block;
     padding: 0;
@@ -236,20 +253,12 @@ li {
         border-bottom-style: dashed;
     }
 
-    #portfolio .Udemy img {
-        width: 300px;
-    }
-
     #portfolio .GGJ img {
         width: 300px;
     }
 
     #portfolio .NewMedia3030 .TTT {
         width: 500px;
-    }
-
-    #portfolio .NewMedia3030 .Arach {
-        width: 200px;
     }
 
     #portfolio .NewMedia2015 a {
