@@ -248,9 +248,13 @@ li {
     }
 
     #portfolio h2 {
-        /* width: 100%; */
         border-bottom-color: #3e9;
-        /* border-bottom-style: dashed; */
+    }
+
+    #portfolio h3 {
+        border-bottom-color: #3e9;
+        width: 100%;
+        border-bottom-style: dashed;
     }
 
     #portfolio .GGJ img {
