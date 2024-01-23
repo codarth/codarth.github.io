@@ -117,6 +117,12 @@ li {
     margin-left: 20%;
 }
 
+hr {
+    height: 3px;
+    border: none;
+    border-bottom: 3px dashed #3e9;
+}
+
 .welcome-message {
     vertical-align: middle;
     width: 100%;
@@ -195,6 +201,10 @@ li {
 
     #education .title-section {
         border-color: #bb1;
+    }
+
+    #education h4 span{
+        font-weight: normal;
     }
 
 #skills {
