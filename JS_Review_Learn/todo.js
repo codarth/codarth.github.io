@@ -47,7 +47,7 @@ let addTask = function() {
         bindTaskEvents(listItem, taskCompleted);
         taskInput.value = "";
     } else {
-        alert("You have reached the maximum number of tasks of 5.\nPlease delete a task to add a new one.");
+        alert("You have reached the maximum number of tasks of 5.\nPlease delete a task to add a new one.\n\n Adding a limit was part of the challenge.");
     }
 };
 
