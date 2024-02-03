@@ -123,6 +123,17 @@ hr {
     border-bottom: 3px dashed #3e9;
 }
 
+.toggleHeading {
+    color: black;
+    text-decoration: none;
+}
+.toggleHeading h3::before {
+    content: "▼ ";
+}
+.toggleHeading h3::after {
+    content: " ▲";
+}
+
 .welcome-message {
     vertical-align: middle;
     width: 100%;
@@ -267,6 +278,7 @@ hr {
         border-bottom-style: dashed;
     }
 
+
     #portfolio .GGJ img {
         width: 300px;
     }
@@ -275,7 +287,7 @@ hr {
         width: 500px;
     }
 
-    #portfolio .NewMedia2015 a {
+    /* #portfolio .NewMedia2015 a {
         display: inline-block;
         border: 0.1vw dashed #000;
         border-radius: 1vw;
@@ -288,7 +300,7 @@ hr {
     #portfolio .NewMedia2015 a {
         text-decoration: none;
         color: #000;
-    }
+    } */
 
         #portfolio .NewMedia2015 a:hover {
             background-color: #4ae;

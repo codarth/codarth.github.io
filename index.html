@@ -14,6 +14,8 @@
 		<meta name="description" content="This is the portfolio of Cody Crawford." />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	</head>
 
 	<body>
@@ -305,188 +307,232 @@
 								</p>
 							</div>
 							<div class="personalProjects">
-								<h3>Personal Projects</h3>
-								<div>
-									<h4>Farmers Rush (WIP Name)</h4>
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#personal" role="button" aria-expanded="false" aria-controls="personal">
+									<h3>Personal Projects</h3>
+								</a>
+								<div class="collapse" id="personal">
+									<div>
+										<h4>Farmers Rush (WIP Name)</h4>
+										<p>
+											In this project I am creating a competitive farming game for 1-4 players in local split screen. The
+											main menu will be a interactive menu where players join as a character that can move around, an idea I
+											got from a couple other games.
+										</p>
+										<p>
+											One of the main issues I ran into so far is the split screen. The way my game is setup if there are
+											less then 4 players then the split screen would still have four sections. Doing some research and
+											troubleshooting I came across
+											<a
+												href="https://spyro-soft.com/developers/customising-unreal-engine-split-screen-with-a-simple-plugin"
+												>this</a
+											>
+											article guiding me on how to handle custom split screens. Though I still had to alter how he did it in
+											his custom plugin, I got mine to work as I desired.
+										</p>
+										<p>Here is a video showing this off.</p>
+										<iframe
+											width="480"
+											height="270"
+											src="https://www.youtube.com/embed/WpxPbAXVrI8?si=6yFDI-h7tmU1-smI"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											allowfullscreen></iframe>
+									</div>	
+									<div>
+										<h4>Javascript Learning/Review</h4>
+										<p>In a way to enhance my skills and refresh my knowledge, I am going through <u>"JavaScript for Beginners to Advanced - The Complete Journey"</u>. As I progress I will be adding the projects I do here. </p>
+										<a href="JS_Review_Learn/todo.html">To Do List</a>
+									</div>
+								</div>
+							</div>
+							<div class="MM">
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#gol" role="button" aria-expanded="false" aria-controls="gol">
+									<h3>Midnight Mammoth</h3>
+								</a>
+								<div class="collapse" id="mm">
 									<p>
-										In this project I am creating a competitive farming game for 1-4 players in local split screen. The
-										main menu will be a interactive menu where players join as a character that can move around, an idea I
-										got from a couple other games.
+										<a href="https://midnightmammoth.com/">Midnight Mammoth</a>
+										video game company based out of Lethbridge, Alberta, Canada
 									</p>
+									<h3>Sad Robot</h3>
 									<p>
-										One of the main issues I ran into so far is the split screen. The way my game is setup if there are
-										less then 4 players then the split screen would still have four sections. Doing some research and
-										troubleshooting I came across
-										<a
-											href="https://spyro-soft.com/developers/customising-unreal-engine-split-screen-with-a-simple-plugin"
-											>this</a
-										>
-										article guiding me on how to handle custom split screens. Though I still had to alter how he did it in
-										his custom plugin, I got mine to work as I desired.
+										Sad Robot started as a course assignment and was envisioned to becoming a awesome game by Midnight
+										Mammoth.<br />
+										My Contribution was the NPC AI.
 									</p>
-									<p>Here is a video showing this off.</p>
+								</div>	
+							</div>
+							<div class="RisingSun">
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#gol" role="button" aria-expanded="false" aria-controls="gol">
+									<h3>Rising Sun</h3>
+								</a>
+								<div class="collapse" id="rs">
+									<p>
+										Rising Sun was a project from Big L studio, A small start-up studio. I was one of the programmers.
+										Rising Sun is a story based RPG in the 15th(?) century Japan.<br />
+										My role was mainly focused on Dialogs.
+									</p>
+								</div>
+							</div>
+							<div class="GGJ">
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#ggj2019" role="button" aria-expanded="false" aria-controls="ggj2019">
+									<h3>Global Game Jam 2019</h3>
+								</a>
+								<div class="collapse" id="ggj2019">
+									<p>
+										Working in a team of two, with music and graphics from others, We created a Roomba game. A relaxing
+										game where players are the roomba cleaning the rooms while keeping an eye on battery life. You can
+										actually play it
+										<a href="http://staging.appasaur.us/roomba-game/">here</a>.
+									</p>
+									<a href="http://staging.appasaur.us/roomba-game/">
+										<img src="images/RoombaGame_GGJ2019.png" alt="Roomba Game" />
+									</a>
+								</div>
+							</div>
+							<div>
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#gol" role="button" aria-expanded="false" aria-controls="gol">
+									<h3>Game of Life simulation</h3>
+								</a>	
+								<div class="collapse" id="gol">
 									<iframe
 										width="480"
 										height="270"
-										src="https://www.youtube.com/embed/WpxPbAXVrI8?si=6yFDI-h7tmU1-smI"
+										src="https://www.youtube.com/embed/GrL3FCyWjkg?si=uOQuwEUv_DWR3Kcz"
 										title="YouTube video player"
 										frameborder="0"
 										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 										allowfullscreen></iframe>
-								</div>	
-								<div>
-									<h4>Javascript Learning/Review</h4>
-									<p>In a way to enhance my skills and refresh my knowledge, I am going through <u>"JavaScript for Beginners to Advanced - The Complete Journey"</u>. As I progress I will be adding the projects I do here. </p>
-									<a href="JS_Review_Learn/todo.html">To Do List</a>
-								</div>
-							</div>
-							<div class="MM">
-								<h3>Midnight Mammoth</h3>
-								<p>
-									<a href="https://midnightmammoth.com/">Midnight Mammoth</a>
-									video game company based out of Lethbridge, Alberta, Canada
-								</p>
-								<h3>Sad Robot</h3>
-								<p>
-									Sad Robot started as a course assignment and was envisioned to becoming a awesome game by Midnight
-									Mammoth.<br />
-									My Contribution was the NPC AI.
-								</p>
-							</div>
-							<div class="RisingSun">
-								<h3>Rising Sun</h3>
-								<p>
-									Rising Sun was a project from Big L studio, A small start-up studio. I was one of the programmers.
-									Rising Sun is a story based RPG in the 15th(?) century Japan.<br />
-									My role was mainly focused on Dialogs.
-								</p>
-							</div>
-							<div class="GGJ">
-								<h3>Global Game Jam 2019</h3>
-								<p>
-									Working in a team of two, with music and graphics from others, We created a Roomba game. A relaxing
-									game where players are the roomba cleaning the rooms while keeping an eye on battery life. You can
-									actually play it
-									<a href="http://staging.appasaur.us/roomba-game/">here</a>.
-								</p>
-								<a href="http://staging.appasaur.us/roomba-game/">
-									<img src="images/RoombaGame_GGJ2019.png" alt="Roomba Game" />
-								</a>
-							</div>
-							<div>
-								<h3>Game of Life simulation</h3>
-								<iframe
-									width="480"
-									height="270"
-									src="https://www.youtube.com/embed/GrL3FCyWjkg?si=uOQuwEUv_DWR3Kcz"
-									title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-									allowfullscreen></iframe>
-								<p>
-									This is the result of me watching
-									<a href="https://www.youtube.com/watch?v=FWSR_7kZuYg">The Coding Train</a>'s explanation and
-									implementation of the concept of "the game of life". I based my code on the description from the
-									wikipedia,
-									<a
-										href="https://www.youtube.com/redirect?redir_token=LiVkr7IAbaXkOdPQlu8QIYFnbgp8MTU0NjAzMzM0MkAxNTQ1OTQ2OTQy&q=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FConway%2527s_Game_of_Life&event=video_description&v=FWSR_7kZuYg"
-										>Conway's Game of Life</a
-									>.
-								</p>
+									<p>
+										This is the result of me watching
+										<a href="https://www.youtube.com/watch?v=FWSR_7kZuYg">The Coding Train</a>'s explanation and
+										implementation of the concept of "the game of life". I based my code on the description from the
+										wikipedia,
+										<a
+											href="https://www.youtube.com/redirect?redir_token=LiVkr7IAbaXkOdPQlu8QIYFnbgp8MTU0NjAzMzM0MkAxNTQ1OTQ2OTQy&q=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FConway%2527s_Game_of_Life&event=video_description&v=FWSR_7kZuYg"
+											>Conway's Game of Life</a
+										>.
+									</p>
+									</div>
 							</div>
 							<div class="Abeyance">
-								<h3>Video Game Production (NMED4710)</h3>
-								<iframe
-									width="480"
-									height="270"
-									src="https://www.youtube.com/embed/iVBR4h-L040?rel=0"
-									allow="autoplay; encrypted-media"
-									allowfullscreen></iframe>
-								<p>
-									Inspired by surrealism, mental illness and disability, you play as a character who’s awoken into a
-									mysterious world. With the help of a convenient companion, together you search for answers in order to
-									survive. Our intentions with the game are to build off of and diverge from established RPG
-									conventions. (Source:
-									<a href="https://ulethnewmedia.com/student_showcase/abeyance/">Uleth New Media</a>
-									department)
-								</p>
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#video" role="button" aria-expanded="false" aria-controls="video">
+									<h3>Video Game Production (NMED4710)</h3>
+								</a>
+								<div class="collapse" id="video">
+									<iframe
+										width="480"
+										height="270"
+										src="https://www.youtube.com/embed/iVBR4h-L040?rel=0"
+										allow="autoplay; encrypted-media"
+										allowfullscreen></iframe>
+									<p>
+										Inspired by surrealism, mental illness and disability, you play as a character who’s awoken into a
+										mysterious world. With the help of a convenient companion, together you search for answers in order to
+										survive. Our intentions with the game are to build off of and diverge from established RPG
+										conventions. (Source:
+										<a href="https://ulethnewmedia.com/student_showcase/abeyance/">Uleth New Media</a>
+										department)
+									</p>
+								</div>
 							</div>
 							<div class="NewMedia3030">
-								<h3>3-D Computer Modeling and Animation (NMED3030)</h3>
-								<h4>Model a Toy</h4>
-								<p>I was to model a toy. I chose a Tonka Truck.</p>
-								<!-- <img class="TTT" src="images/TonkaTruck.png" alt="Tonka Truck Toy" /> -->
-								<h4>Create a future gadget</h4>
-								<p>
-									In this assignment, I was to create a futuristic gadget. Model and animate it. Also Create an poster
-									to advertise it.
-								</p>
-								<!-- <img class="Arach" src="images/Crawford_Cody_A2_S2_Poster_Arachnopod.png" alt="Arachnopod Poster"/> -->
-								<iframe
-									width="480"
-									height="270"
-									src="https://www.youtube.com/embed/WAw9dAH9sGQ"
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#modeling" role="button" aria-expanded="false" aria-controls="modeling">
+									<h3>3-D Computer Modeling and Animation (NMED3030)</h3>
+								</a>
+								<div class="collapse" id="modeling">
+									<h4>Model a Toy</h4>
+									<p>I was to model a toy. I chose a Tonka Truck.</p>
+									<!-- <img class="TTT" src="images/TonkaTruck.png" alt="Tonka Truck Toy" /> -->
+									<h4>Create a future gadget</h4>
+									<p>
+										In this assignment, I was to create a futuristic gadget. Model and animate it. Also Create an poster
+										to advertise it.
+									</p>
+									<!-- <img class="Arach" src="images/Crawford_Cody_A2_S2_Poster_Arachnopod.png" alt="Arachnopod Poster"/> -->
+									<iframe
+										width="480"
+										height="270"
+										src="https://www.youtube.com/embed/WAw9dAH9sGQ"
+										allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+								</div>	
 							</div>
 							<div class="NewMedia2015">
-								<h3>Digital Drawing and Animation (NMED2015)</h3>
-								<p>Here I did have some gif files for a few projects, however, these too were lost.</p>
-								<!-- <a href="images/BoxDraw.gif">Drawing a box on paper</a>
-                            <a href="images/courtship.gif">Animating a still image</a>
-                            <a href="images/ZombieRun.gif">2D stop motion animation</a>
-                            <a href="images/BowlingforZombies.gif">3d stop motion animation</a>
-                            <p>Some results from the Animation classes.</p> -->
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#drawing" role="button" aria-expanded="false" aria-controls="drawing">
+									<h3>Digital Drawing and Animation (NMED2015)</h3>
+								</a>
+								<div class="collapse" id="drawing">
+									<p>Here I did have some gif files for a few projects, however, these too were lost.</p>
+									<!-- <a href="images/BoxDraw.gif">Drawing a box on paper</a>
+									<a href="images/courtship.gif">Animating a still image</a>
+									<a href="images/ZombieRun.gif">2D stop motion animation</a>
+									<a href="images/BowlingforZombies.gif">3d stop motion animation</a>
+									<p>Some results from the Animation classes.</p> -->
+								</div>
 							</div>
 							<div class="NewMedia2030">
-								<h3>Digital Video Production (NMED2030)</h3>
-								<h4>30 Advertisement</h4>
-								<iframe
-									width="480"
-									height="270"
-									src="https://www.youtube.com/embed/23RA2IosTdo?rel=0"
-									allow="autoplay; encrypted-media"
-									allowfullscreen></iframe>
-								<p>
-									The assignment was to make a 30 second advertisement about a product. My idea was to make a ad about a
-									game I like to play. I was the director and camera man.
-								</p>
-								<h4>Documentary</h4>
-								<iframe
-									width="480"
-									height="270"
-									src="https://www.youtube.com/embed/AVwt_25amcY?rel=0"
-									allow="autoplay; encrypted-media"
-									allowfullscreen></iframe>
-								<p>
-									This project was to make a documentary about a event from one of our families. This was a story from
-									my family recorded in my great grandfathers journal. It is called the Missing Milk.
-								</p>
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#dvp" role="button" aria-expanded="false" aria-controls="dvp">
+									<h3>Digital Video Production (NMED2030)</h3>
+								</a>
+								<div class="collapse" id="dvp">
+									<h4>30 Second Advertisement</h4>
+									<iframe
+										width="480"
+										height="270"
+										src="https://www.youtube.com/embed/23RA2IosTdo?rel=0"
+										allow="autoplay; encrypted-media"
+										allowfullscreen></iframe>
+									<p>
+										The assignment was to make a 30 second advertisement about a product. My idea was to make a ad about a
+										game I like to play. I was the director and camera man.
+									</p>
+									<h4>Documentary</h4>
+									<iframe
+										width="480"
+										height="270"
+										src="https://www.youtube.com/embed/AVwt_25amcY?rel=0"
+										allow="autoplay; encrypted-media"
+										allowfullscreen></iframe>
+									<p>
+										This project was to make a documentary about a event from one of our families. This was a story from
+										my family recorded in my great grandfathers journal. It is called the Missing Milk.
+									</p>
+								</div>
 							</div>
 							<div class="NewMedia1000">
-								<h3>Introduction to New Media - "Tattoo" - the landslide of future technology (NMED1000)</h3>
-								<iframe
-									width="560"
-									height="315"
-									src="https://www.youtube.com/embed/yt5n6zInggQ?si=l1ES1ecHcTqIOeZy"
-									title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-									allowfullscreen></iframe>
-								<p>
-									Our final project of the course. Our topic was "the Landslide of Future technology." I came up with
-									the idea after watching a documentary in class. The concept is that the tattoos were to allow the
-									person to use it a authentication and the replacement of identification, or having to carry around
-									bank cards. The landslide is that there is always some way to manipulate the outcome of the idea.
-									Hence the hacker causing them to buy the skittles and to start dancing.
-								</p>
+									<a class="toggleHeading" data-bs-toggle="collapse" href="#tattoo" role="button" aria-expanded="false" aria-controls="tattoo">
+										<h3>Introduction to New Media - "Tattoo" - the landslide of future technology (NMED1000)</h3>
+									</a>
+									<div class="collapse" id="tattoo">	
+										<iframe
+											width="560"
+											height="315"
+											src="https://www.youtube.com/embed/yt5n6zInggQ?si=l1ES1ecHcTqIOeZy"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											allowfullscreen></iframe>
+										<p>
+											Our final project of the course. Our topic was "the Landslide of Future technology." I came up with
+											the idea after watching a documentary in class. The concept is that the tattoos were to allow the
+											person to use it a authentication and the replacement of identification, or having to carry around
+											bank cards. The landslide is that there is always some way to manipulate the outcome of the idea.
+											Hence the hacker causing them to buy the skittles and to start dancing.
+										</p>
+									</div>
 							</div>
 							<div class="Other">
-								<h3>Other</h3>
-								<p>
-									For other smaller University projects, like Rotoscope, Stop Motion, see my
-									<a href="https://www.youtube.com/channel/UCw65XwGSnvU2lGrxcjJrhVg">University YouTube</a>.
-								</p>
+								<a class="toggleHeading" data-bs-toggle="collapse" href="#other" role="button" aria-expanded="false" aria-controls="other">
+									<h3>Other</h3>
+								</a>
+								<div class="collapse" id="other">
+									<p>
+										For other smaller University projects, like Rotoscope, Stop Motion, see my
+										<a href="https://www.youtube.com/channel/UCw65XwGSnvU2lGrxcjJrhVg">University YouTube</a>.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -505,5 +551,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	</body>
 </html>
