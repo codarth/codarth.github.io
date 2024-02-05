@@ -72,3 +72,24 @@ const firstThree = (str) => {
 console.log(firstThree('Hello'));
 console.log(firstThree('Goodbye'));
 
+
+
+// IIFE's
+(function() {
+    console.log('IIFE');
+})();
+
+// string match and matchAll
+let str = 'The quick brown fox jumps over the lazy dog';
+console.log(str.match("the")); // [ 'the', index: 31, input: 'The quick brown fox jumps over the lazy dog', groups: undefined ]
+let regex = /the/gi;
+console.log(str.match(regex)); // [ 'The', 'the' ]
+let str2 = 'The quick brown fox jumps over the lazy dog';
+let regex2 = /the/gi;
+let iterator = str2.matchAll(regex2);
+console.log(iterator); // Object [RegExp String Iterator] {}
+for (let match of iterator) {
+    console.log(match);
+}
+// [ 'The', index: 0, input: 'The quick brown fox jumps over the lazy dog', groups: undefined ]
+// [ 'the', index: 31, input: 'The quick brown fox jumps over the lazy dog', groups: undefined ]

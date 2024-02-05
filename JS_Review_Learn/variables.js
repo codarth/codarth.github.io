@@ -1,3 +1,10 @@
+// var -> global/functional scope
+// let -> block scope
+// const -> block scope, cannot be reassigned
+//       -> object properties can be changed
+//       -> array elements can be changed
+//       
+
 let message = "Hello";
 let number = 5;
 let choice = true;
