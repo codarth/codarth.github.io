@@ -137,3 +137,116 @@ tree.grow();
 console.log(tree.branches); // [ 'Branch', 'Branch', 'Branch', 'Branch' ]
 
 
+
+// destructuring
+let person5 = {
+    FirstName: 'John',
+    LastName: 'Doe',
+    age: 25,
+    Height: 5.5,
+    health: true
+};
+let {FirstName, LastName, age} = person5;
+console.log(FirstName, LastName, age); // John Doe 25
+
+let {FirstName: fn, LastName: ln, age: a} = person5;
+console.log(fn, ln, a); // John Doe 25
+
+let {FirstName: fn2, LastName: ln2, age: a2, ...rest} = person5;
+console.log(fn2, ln2, a2, rest); // John Doe 25 { Height: 5.5, health: true }
+
+let {FirstName: First, LastName: Last, age: Age, Height: H = 4.6} = {FirstName: 'Jane', LastName: 'Gordon', age: 25, Health: true};
+console.log(First, Last, Age, H); // Jane Gordon 25
+
+let GetColor = function() {
+    return 'blue';
+};
+let {FirstName: First2, LastName: Last2, FavoriteColor: Color = GetColor()} = person5;
+console.log(First2, Last2, Color); // John Doe blue
+
+
+// Arrays in ES2020
+let arr = [1, , 3, [4, 5]];
+
+const flatArray = arr.flat();
+console.log(arr); // [ 1, empty, 3, Array(2) ]
+console.log(flatArray); // [ 1, 3, 4, 5 ]
+
+let arrToFlatMap = [1, 2, 3];
+
+const flatArray2 = arrToFlatMap.flatMap((x) => x * 2);
+console.log(flatArray2); // [ 2, 4, 6 ]
+
+let names = ['John', 'Jane', 'Jack'];
+let [first, second, third] = names;
+console.log(first, second, third); // John Jane Jack
+
+let [name1, , name3] = names;
+console.log(name1, name3); // John Jack
+
+let [firstName, lastName] = 'John Doe'.split(' ');
+console.log(firstName, lastName); // John Doe
+
+let user = {};
+let someone = ['John', 25, , true];
+[user.name, user.age, user.Height = 5.5, user.healthy] = someone;
+console.log(user); // { "name": "John", "age": 25, "Height": 5.5, "healthy": true}
+
+let somevalues = [1, 2, 3, 4, 5];
+let somevalues2 = [6, 7, 8, 9, 10];
+let newarr = [...somevalues, ...somevalues2];
+console.log(newarr); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+let newarr2 = [...somevalues, somevalues2[3]];
+console.log(newarr2); // [ 1, 2, 3, 4, 5, 9 ]
+
+let user1 = {
+    name: 'John',
+    age: 25
+};
+let user2 = {
+    name: 'Jane',
+    age: 30
+};
+let users = [user1, user2];
+let newusers = [...users, {name: 'Jack', age: 35}];
+console.log(newusers); // [ { name: 'John', age: 25 }, { name: 'Jane', age: 30 }, { name: 'Jack', age: 35 } ]
+
+let names2 = ['John', 'Jane', 'Jack'];
+let [first2, ...rest2] = names2;
+console.log(first2, rest2); // John [ 'Jane', 'Jack' ]
+
+let p = {
+    name: 'John',
+    age: 25,
+    address: {
+        street: '123 Main St',
+        city: 'New York'
+    }
+};
+let {name, ...rest3} = p;
+console.log(name, rest3); // John { age: 25, address: { street: '123 Main St', city: 'New York' } }
+
+// Challenge
+/*
+{
+    name: "Jake Donnovan",
+    age:10,
+    height:"6ft",
+    country:"Lalaland",
+    city:"Nowhere",
+    street:"Elm Street"
+}
+*/
+
+let person6 = {
+    name: "Jake Donnovan",
+    age:10,
+    height:"6ft",
+    country:"Lalaland",
+    city:"Nowhere",
+    street:"Elm Street"
+};
+
+let {name: n, age: ag, height: h, ...address} = person6;
+
+console.log(n, ag, h, address); // Jake Donnovan 10 6ft { country: 'Lalaland', city: 'Nowhere', street: 'Elm Street' }
