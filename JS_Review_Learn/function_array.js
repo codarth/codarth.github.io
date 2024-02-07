@@ -93,3 +93,18 @@ for (let match of iterator) {
 }
 // [ 'The', index: 0, input: 'The quick brown fox jumps over the lazy dog', groups: undefined ]
 // [ 'the', index: 31, input: 'The quick brown fox jumps over the lazy dog', groups: undefined ]
+
+
+// Arrow Functions
+let arr = [1, 2, 3, 4, 5];
+let squared = arr.map((x) => x * x);
+console.log(squared); // [ 1, 4, 9, 16, 25 ]
+
+const fun = (a, b) => a + b;
+console.log(fun(5, 7)); // 12
+
+const fun2 = (a, b) => {
+    return a + b;
+}
+console.log(fun2(5, 7)); // 12
+
