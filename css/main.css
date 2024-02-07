@@ -123,15 +123,29 @@ hr {
     border-bottom: 3px dashed #3e9;
 }
 
+/* collapsible sections */
 .toggleHeading {
     color: black;
     text-decoration: none;
 }
-.toggleHeading h3::before {
+.toggleHeading h3:hover {
+    cursor: pointer;
+}
+.toggleHeading:hover h3::before {
     content: "▼ ";
+    display: none;
+    vertical-align: middle;
 }
 .toggleHeading h3::after {
     content: " ▲";
+    display: inline-block;
+    vertical-align: middle;
+}
+.toggleHeading.collapsed h3::before {
+    display: inline-block;
+}
+.toggleHeading.collapsed h3::after {
+    display: none;
 }
 
 .welcome-message {
