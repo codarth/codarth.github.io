@@ -108,3 +108,27 @@ const fun2 = (a, b) => {
 }
 console.log(fun2(5, 7)); // 12
 
+
+
+// Rest parameters
+function sum(...args) {
+    console.log(args);
+    return args.reduce((a, b) => a + b);
+}
+console.log(sum(1, 2, 3, 4, 5)); // 15
+
+// Rest Challenge
+/*
+Create a calculator which takes values and keeps stringing them on.
+First Parameter decides addition or subtraction
+*/
+function calculator(operation = "add", ...args) {
+    if (operation === 'add') {
+        return args.reduce((a, b) => a + b);
+    } else if (operation === 'sub') {
+        return args.reduce((a, b) => a - b);
+    }
+}
+console.log(calculator('add', 1, 2, 3, 4, 5)); // 15
+console.log(calculator('sub', 1, 2, 3, 4, 5)); // -13
+console.log(calculator(undefined, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)); // 55 
