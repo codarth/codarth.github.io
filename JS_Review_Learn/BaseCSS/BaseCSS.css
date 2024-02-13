@@ -1,0 +1,92 @@
+/* body */
+body {
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: orange;
+}
+
+/* 1st Section */
+.first {
+	background-image: url(images/main-bg.jpg);
+	width: 100%;
+	height: 900px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.logo {
+	color: orange;
+}
+
+/* 2nd Section */
+
+.second {
+	color: #000;
+}
+
+/* 3rd Section */
+
+.third {
+	background-image: url(images/bw-feature-bg.jpg);
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* Call To Action */
+
+.cta {
+	padding: 1rem;
+	background-color: orange;
+}
+
+/* 4th Section */
+
+.fourth {
+	background-color: #ebebeb;
+}
+
+/* Contact Section */
+
+.contact-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #000;
+}
+
+.contact-image {
+	flex-basis: 60%;
+	background-image: url("images/contact-bg.jpg");
+	background-size: cover;
+	height: 700px;
+}
+
+.contact-form {
+	flex-basis: 40px;
+	margin-top: 50px;
+}
+
+.form-control {
+	margin-bottom: 20px;
+}
+
+/* Footer */
+
+.footer {
+	background-color: #000;
+	padding: 20px;
+	text-align: center;
+}
