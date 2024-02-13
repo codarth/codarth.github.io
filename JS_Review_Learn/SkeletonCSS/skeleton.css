@@ -1,0 +1,101 @@
+/* Menu */
+.nav {
+	padding: 15px;
+}
+.nav a {
+	text-decoration: none;
+	padding: 5px;
+}
+
+/* Section */
+.section {
+	padding: 8rem 0 7rem;
+	text-align: center;
+}
+
+/* Hero */
+.dogs {
+	position: relative;
+}
+.dog {
+	position: relative;
+	max-width: 80%;
+	margin: 3rem auto -12rem;
+}
+.dog + .dog {
+	display: none;
+}
+
+/* 2nd Section */
+.status{
+    background-image: url(images/dogs-bg.jpg);
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 5rem;
+}
+.status-multiplier {
+    margin-bottom: .5rem;
+    color: aqua;
+}
+.status-heading {
+    margin-bottom: .3rem;
+}
+.status-description {
+    opacity: .8;
+    font-weight: 300;
+}
+
+/* 3rd Section */
+.guide {
+    border-bottom: 1px solid #ddd;
+}   
+
+/* 4th Section */
+.featured {
+    background-image: url(images/pattern-bg.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.featured .status-description {
+    margin-bottom: 4rem;
+}
+.rounded-border {
+    border-radius: 30px;
+}
+
+/* Footer */
+.footer {
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+    .section {
+        padding: 12rem 0 11rem;
+    }
+
+    .hero {
+        padding-bottom: 12rem;
+        text-align: left;
+        height: 165px;
+    }
+    .dog {      
+        position: absolute; 
+        top: -7rem;
+        right: 3rem;
+        max-height: 362px;
+        z-index: 3;
+    }
+    .dog + .dog {  
+        top: -6rem;
+        display: block;      
+        max-width: 73.8%;
+        right: 0;
+        z-index: 2;
+        max-height: 338px;
+    }
+    .hero-heading {
+        font-size: 2.4rem;
+    }
+}
