@@ -1,0 +1,32 @@
+.header-image {
+  background-image: url("https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main-container {
+  background-color: rgba(238, 238, 238, 0.963);
+  padding: 0;
+}
+
+.header-text {
+  color: azure;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+ion-icon {
+    font-size: 2.1em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
