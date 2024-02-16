@@ -1,0 +1,33 @@
+.logo p {
+	margin: 0 auto;
+}
+
+.logo img {
+	width: 200px;
+}
+
+.nav-bar {
+	width: 100%;
+}
+
+.nav-bar h2 {
+	padding-left: 5%;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	list-style: none;
+	padding: 5%;
+	align-items: center;
+}
+
+.menu a {
+	text-decoration: none;
+}
+
+.services {
+    padding: 7% 2%;
+}

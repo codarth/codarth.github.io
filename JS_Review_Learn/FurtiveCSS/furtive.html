@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Furtive CSS Demo</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/furtive/2.3.0/furtive.css" />
+		<link rel="stylesheet" href="furtive.css" />
+
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</head>
+	<body>
+		<!-- Navigation -->
+
+		<div class="grd bg--white nav-bar p1">
+			<div class="grd-row">
+				<div class="grd-row-col-1-6">
+					<nav>
+						<ul class="menu">
+							<li><a class="fnt--dark-gray" href="#">Home</a></li>
+							<li><a class="fnt--dark-gray" href="#">About</a></li>
+							<li><a class="fnt--dark-gray" href="#">Services</a></li>
+							<li><a class="fnt--dark-gray" href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="grd-row-col-5-6">
+					<div class="logo">
+						<p class="txt--center">
+							<img src="images/logo.png" alt="Logo" />
+						</p>
+					</div>
+				</div>
+				<div class="grd-row-col-1-6 h3 txt--right px1">
+					<ion-icon name="logo-facebook"></ion-icon>
+					<ion-icon name="logo-instagram"></ion-icon>
+				</div>
+			</div>
+		</div>
+
+		<!-- Hero -->
+
+		<main>
+			<section>
+				<!-- <video autoplay muted loop src="images/car.mp4"></video> -->
+				<video autoplay muted loop>
+					<source src="images/car.mp4" type="video/mp4" />
+					Your browser does more support the video tag.
+				</video>
+			</section>
+
+			<!-- About -->
+
+			<section class="grd">
+				<div class="grd-row">
+					<div class="grd-row-col-3-6">
+						<img
+							src="https://images.pexels.com/photos/6872577/pexels-photo-6872577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+							alt="Car Spa" />
+					</div>
+					<div class="grd-row-col-3-6 px2">
+						<h2 class="bold">About Us</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iste deserunt et, molestias eius numquam
+							reprehenderit fugit quam inventore ut voluptatibus, perspiciatis soluta odit recusandae corrupti nostrum
+							placeat eveniet. Illo, facilis odio illum, asperiores, est delectus nisi aliquid id quae nihil aliquam
+							tempora voluptas voluptatibus quasi harum perferendis natus. Fugiat.
+						</p>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aut suscipit dicta iste molestiae
+							autem nihil illum minima consectetur labore.
+						</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsam.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services -->
+
+			<section class="grid p2 bg--light-gray services">
+				<h2 class="txt--center bold">Our Services</h2>
+				<div class="grd-row py2 txt--center">
+					<div class="grd-row-col-3-6 px2">
+						<ion-icon class="h1" name="car-sport-outline"></ion-icon>
+						<h3 class="bold">Car Restoration</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus veritatis qui nobis explicabo
+							architecto quo porro, pariatur, asperiores quaerat, deserunt illo. Beatae quas et pariatur quisquam
+							perferendis laborum sit.
+						</p>
+					</div>
+					<div class="grd-row-col-3-6 px2">
+						<ion-icon class="h1" name="build-outline"></ion-icon>
+						<h3 class="bold">Rust Repair</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus veritatis qui nobis explicabo
+							architecto quo porro, pariatur, asperiores quaerat, deserunt illo. Beatae quas et pariatur quisquam
+							perferendis laborum sit.
+						</p>
+					</div>
+					<div class="grd-row-col-3-6 px2">
+						<ion-icon class="h1" name="hammer-outline"></ion-icon>
+						<h3 class="bold">Panel Beating</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus veritatis qui nobis explicabo
+							architecto quo porro, pariatur, asperiores quaerat, deserunt illo. Beatae quas et pariatur quisquam
+							perferendis laborum sit.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+
+			<section>
+				<div class="grd-row">
+					<div class="grd-row-col-3-6 p2">
+						<h3>Set Appointment</h3>
+						<p class="h4">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis accusantium eaque quia.
+							Recusandae eligendi voluptatem cum ut, harum vel.
+						</p>
+						<form class="my2">
+							<label for="name">Name</label>
+							<input type="text" name="name" placeholder="Enter Your Name..." />
+							<label for="email">Email</label>
+							<input type="text" email="email" placeholder="Enter Your Email..." />
+							<label for="message">Message</label>
+							<textarea name="message" rows="3" placeholder="Enter Your Message..."></textarea>
+							<input type="checkbox" />
+							<label for="send">Send Copy</label>
+							<input type="submit" value="Submit" class="btn--blue" />
+						</form>
+					</div>
+					<div class="grd-row-col-3-6">
+						<img
+							src="https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+							alt="Phone" />
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+
+		<footer class="txt--center p2 bg--light-gray">Car Spa &copy; 2021</footer>
+	</body>
+</html>
