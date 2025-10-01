@@ -1,396 +1,355 @@
+/* Define color variables for easy theming */
+:root {
+  /* Primary brand colors */
+  --color-primary: #ff4000;        
+  --color-primary-dark: #4d4f55; 
+  --color-primary-light: #94e;   
+
+  /* Sidebar colors */
+  --color-sidebar-bg: #2b3a67;   
+  --color-sidebar-border: #ff4000;
+  --color-sidebar-text: #f1f1f1;
+  --color-sidebar-link-hover-bg: #273559;
+
+  /* Background colors */
+  --color-background: #414141;    
+  --color-page-bg: #2e2e2e;      
+
+  /* Text colors */
+  --color-text-primary: #333;
+  --color-text-muted: #555;
+  --color-text-light: #00bbff;
+  --color-text-invert: #fff;
+
+  /* Accent & UI */
+  --color-accent: #4ae;          
+  --color-accent-dark: #373e68;  
+  --color-link: #1a73e8;
+  --color-danger: #e37;
+  --color-danger-dark: #b12548;
+
+  /* Borders */
+  --color-border: #3a3a3a;
+}
+
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css?family=Kodchasan|Open+Sans");
 
+/* Box sizing reset */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+/* Base HTML / body */
 html,
 body {
-	height: 100%;
-	margin: auto;
-	font-size: 100%;
-	min-width: 320px;
-	background-color: #969696;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 100%;
+    min-width: 320px;
+    background-color: var(--color-page-bg);
+    font-family: "Open Sans", sans-serif;
+    color: var(--color-text-primary);
+    line-height: 1.6;
 }
 
+/* Images full width */
 img {
-	width: 100%;
+    width: 100%;
+    border-radius: 6px;
 }
 
+/* Custom fonts */
 .kodchasan {
-	font-family: "Kodchasan", sans-serif;
+    font-family: "Kodchasan", sans-serif;
 }
 
 .opensans {
-	font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
+/* Wrapper setup */
 .full_wrapper {
-	display: flex;
-	background-color: #969696;
+    display: flex;
+    background-color: var(--color-page-bg);
+    min-height: 100vh;
 }
 
+/* Sidebar styling */
 .main-sidebar {
-	background-color: #555;
-	color: #ffffff;
-	position: fixed;
-	width: 20%;
-	height: 100%;
-	overflow-y: auto;
-	display: block;
+    background-color: var(--color-sidebar-bg);
+    color: var(--color-sidebar-text);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    overflow-y: auto;
+    font-weight: 500;
+    border-right: 4px solid var(--color-sidebar-border);
+    padding-bottom: 1rem;
 }
 
 .logo {
-	margin: 5vw 0;
-	background-color: #4ae;
-	padding: 1vw 2vw;
+    background-color: var(--color-primary);
+    padding: 2rem 1.5rem;
+    text-align: center;
 }
 
 .logo a {
-	text-decoration: none;
-	color: #ffffff;
+    text-decoration: none;
+    color: var(--color-text-invert);
+}
+
+.logo a h1 {
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.8rem;
 }
 
 .logo p {
-	color: #bbeeff;
-	font-size: 1.1em;
-	margin: 0;
-	padding: 0;
+    color: var(--color-text-light);
+    font-weight: 300;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
 }
 
+/* Sidebar navigation menu */
 .mainmenu {
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	display: block;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+    text-align: left;
 }
 
 .mainmenu li {
-	margin-bottom: 0.1vw;
+    margin: 0;
 }
 
 .mainmenu li a {
-	color: white;
-	text-transform: uppercase;
-	display: block;
-	border-left: 1vw solid;
-	padding: 1vw 2vw;
-	background-color: #333;
-	transition: all 0.5s ease-in;
-	text-decoration: none;
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--color-sidebar-text);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-left: 6px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-decoration: none;
 }
 
+.mainmenu li a.active,
 .mainmenu li a:hover {
-	background-color: #111;
-	transition: all 1s ease-in;
+    background-color: var(--color-sidebar-link-hover-bg);
+    border-left-color: var(--color-primary-light);
+    color: var(--color-text-light);
 }
 
-.mainmenu li {
-	display: list-item;
-}
-
-.mainmenu li.home a {
-	border-color: #4ae;
-}
-
-.mainmenu li.about a {
-	border-color: #f90;
-}
-
-.mainmenu li.education a {
-	border-color: #bb1;
-}
-
-.mainmenu li.skills a {
-	border-color: #94e;
-}
-
-.mainmenu li.portfolio a {
-	border-color: #3e9;
-}
-
-.mainmenu li.contact a {
-	border-color: #e37;
-}
-
+/* Main content styling */
 .main-content {
-	flex: 1;
-	margin-left: 20%;
+    margin-left: 20%;
+    padding: 2.5rem 3rem 3rem 3rem;
+    flex-grow: 1;
+    background-color: var(--color-background);
+    min-height: 100vh;
 }
 
-hr {
-	height: 3px;
-	border: none;
-	border-bottom: 3px dashed #3e9;
-}
-
-/* collapsible sections */
-.toggleHeading {
-	color: black;
-	text-decoration: none;
-}
-.toggleHeading h3:hover {
-	cursor: pointer;
-}
-.toggleHeading:hover h3::before {
-	content: "▼ ";
-	display: none;
-	vertical-align: middle;
-}
-.toggleHeading h3::after {
-	content: " ▲";
-	display: inline-block;
-	vertical-align: middle;
-}
-.toggleHeading.collapsed h3::before {
-	display: inline-block;
-}
-.toggleHeading.collapsed h3::after {
-	display: none;
-}
-
+/* Welcome section */
 .welcome-message {
-	vertical-align: middle;
-	width: 100%;
-	text-align: center;
-	color: #fff;
-	background-color: #4ae;
-	opacity: 1;
+    text-align: center;
+    color: var(--color-text-invert);
+    background-color: var(--color-accent);
+    padding: 3rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
 }
 
 .welcome-message h2 {
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	font-size: 75px;
-}
-
-.welcome-message a {
-	color: #ffff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .welcome-message p {
-	text-transform: uppercase;
-	width: 60%;
-	margin: 0 auto 30px auto;
-	font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.welcome-message p a {
-	text-transform: uppercase;
-	text-decoration: none;
+/* Section blocks with background and shadow */
+.section-block {
+    padding: 2rem 2.5rem;
+    background-color: var(--color-text-invert);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.07);
+    margin-bottom: 2.5rem;
 }
 
-#main-container {
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
+/* Section titles */
 .title-section {
-	border-top: 4px solid;
-	margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .title-section h2 {
-	display: inline-block;
-	padding: 20px 35px;
-	color: white;
-	text-transform: uppercase;
-	font-weight: 300;
-	margin: 0px;
-	font-size: 20px;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 700;
+    background-color: var(--color-accent-dark);
+    color: var(--color-text-invert);
+    padding: 12px 25px;
+    font-size: 2rem;
+    border-radius: 8px 8px 0 0;
+    margin: 0 -2.5rem 1rem -2.5rem;
+    text-transform: uppercase;
 }
 
-#about {
-	display: inline-block;
-	padding: 0;
-	width: 100%;
+/* Headings inside content */
+h3 {
+    font-family: "Kodchasan", sans-serif;
+    font-size: 1.8rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 0.3rem;
 }
 
-#about h2 {
-	background-color: #f90;
+/* Job experience styling */
+.job {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
 }
 
-#about .title-section {
-	border-color: #f90;
+.job h4 {
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    font-size: 1.4rem;
+	margin-bottom: 5px;
 }
 
-#education {
-	display: inline-block;
-	padding: 0;
-	width: 100%;
-}
-#education h2 {
-	background-color: #bb1;
+.job p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin: 0.4rem 0 0.8rem 0;
 }
 
-#education .title-section {
-	border-color: #bb1;
+.job ul {
+    padding-left: 1.2rem;
+    color: var(--color-text-muted);
 }
 
-#education h4 span {
-	font-weight: normal;
+.job ul li {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
 }
 
-#skills {
-	display: inline-block;
-	padding: 0;
-	width: 100%;
+/* Tags (skills) styling */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
 }
 
-#skills .tags {
-	box-sizing: border-box;
+.tags span {
+    display: inline-block;
+    background-color: var(--color-primary-light);
+    color: var(--color-text-invert);
+    border-radius: 20px;
+    padding: 0.3rem 0.7rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    user-select: none;
 }
 
-#skills h2 {
-	background-color: #94e;
+/* Personal projects and detailed portfolio blocks */
+.personalProjects, .MM, .RisingSun, .GGJ, .Abeyance,
+.NewMedia3030, .NewMedia2015, .NewMedia2030, .NewMedia1000,
+.Other, .GameJam2025 {
+    margin-bottom: 3rem;
 }
 
-#skills .title-section {
-	border-color: #94e;
+.personalProjects h3, .MM h3, .RisingSun h3, .GGJ h3, .Abeyance h3,
+.NewMedia3030 h3, .NewMedia2015 h3, .NewMedia2030 h3, .NewMedia1000 h3,
+.Other h3, .GameJam2025 h3 {
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
-#skills ul {
-	list-style: none;
+/* Lists inside portfolio details */
+.learn ul, .personalProjects ul {
+    padding-left: 1.5rem;
+    font-size: 1rem;
 }
 
-#skills li {
-	margin: 0 3px 3px 0;
-	display: inline-block;
+.learn ul li, .personalProjects ul li {
+    margin-bottom: 0.3rem;
 }
 
-#skills span {
-	display: inline-block;
-	border: 1px solid #000;
-	border-radius: 3px;
-	color: #fff;
-	background-color: #94e;
-	padding: 0 5px;
-	overflow: hidden;
+/* Links in skill/project lists */
+.learn ul li a {
+    text-decoration: none;
+    color: var(--color-link);
 }
 
-#portfolio {
-	display: inline-block;
-	padding: 0;
-	width: 100%;
+.learn ul li a:hover {
+    text-decoration: underline;
 }
 
-#portfolio h2 {
-	background-color: #3e9;
+/* Iframe styling (videos) */
+iframe {
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    margin: 1rem 0 2rem 0;
+    max-width: 100%;
+    height: 270px;
 }
 
-#portfolio .title-section {
-	border-color: #3e9;
+/* Portfolio images */
+.GGJ img {
+    width: 300px;
+    border-radius: 6px;
 }
 
-#portfolio h2 {
-	border-bottom-color: #3e9;
-}
-
-#portfolio h3 {
-	border-bottom-color: #3e9;
-	width: 100%;
-	border-bottom-style: dashed;
-}
-
-#portfolio .learn li {
-	display: inline-block;
-	box-sizing: border-box;
-}
-#portfolio .learn span {
-	display: inline-block;
-	border: 1px solid #000;
-	border-radius: 3px;
-	background-color: #3e9;
-	padding: 0 5px;
-	overflow: hidden;
-}
-#portfolio .learn a {
-	text-decoration: none;
-	color: #333;
-}
-
-#portfolio .GGJ img {
-	width: 300px;
-}
-
-#portfolio .NewMedia3030 .TTT {
-	width: 500px;
-}
-
-/* #portfolio .NewMedia2015 a {
-        display: inline-block;
-        border: 0.1vw dashed #000;
-        border-radius: 1vw;
-        color: #000;
-        margin: 0.25vw;
-        padding: 0.1vw 1vw;
-        background-color: #3e9;
-    }
-
-    #portfolio .NewMedia2015 a {
-        text-decoration: none;
-        color: #000;
-    } */
-
-#portfolio .NewMedia2015 a:hover {
-	background-color: #4ae;
-	text-decoration: none;
-}
-
-#contact {
-	display: inline-block;
-	padding: 0;
-	width: 100%;
-}
-
-#contact h2 {
-	background-color: #e37;
-}
-
-#contact .title-section {
-	border-color: #e37;
-}
-
+/* Contact section */
 #contact .info {
-	margin-bottom: 100px;
+    margin-top: 1rem;
 }
 
 #contact .info a {
-	display: inline-block;
-	border: 1px solid #000;
-	border-radius: 3px;
-	color: #fff;
-	background-color: #e37;
-	text-transform: uppercase;
-	text-decoration: none;
-	margin: 5px;
-	padding: 0px 5px;
+    background-color: var(--color-danger);
+    color: var(--color-text-invert);
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
+#contact .info a:hover {
+    background-color: var(--color-danger-dark);
+}
+
+/* Responsive design */
 @media only screen and (max-width: 1000px) {
-	.main-sidebar {
-		display: none;
-	}
-
-	.main-content {
-		margin-left: 0;
-	}
-
-	.welcome {
-		height: 200px;
-	}
-
-	.welcome-message {
-		opacity: 0.8;
-	}
-
-	.welcome-message h2 {
-		font-size: 32px;
-	}
-
-	.welcome-message p {
-		width: 100%;
-	}
+    .main-sidebar {
+        display: none;
+    }
+    .main-content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1.5rem 1rem;
+    }
+    .section-block {
+        padding: 1.5rem 1rem;
+        margin-bottom: 2rem;
+    }
+    iframe {
+        height: auto;
+    }
+    .tags {
+        justify-content: center;
+    }
 }
