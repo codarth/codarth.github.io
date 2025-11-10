@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D&D Random Helper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎲 D&D Random Helper 🎲</h1>
+
+  <!-- SPELLS -->
+  <section class="generator">
+    <h2>🔮 Random Spell Generator</h2>
+    <p>Select a spell level and reveal your random spell!</p>
+
+    <select id="spellLevel">
+      <option value="Cantrip">Cantrip</option>
+      <option value="1">Level 1</option>
+      <option value="2">Level 2</option>
+      <option value="3">Level 3</option>
+      <option value="4">Level 4</option>
+      <option value="5">Level 5</option>
+      <option value="6">Level 6</option>
+      <option value="7">Level 7</option>
+      <option value="8">Level 8</option>
+      <option value="9">Level 9</option>
+    </select>
+
+    <button id="spellButton">Cast Random Spell!</button>
+    <div id="spellResult" class="result"></div>
+  </section>
+
+  <!-- COINS -->
+  <section class="generator">
+    <h2>💰 Random Coin Generator</h2>
+    <p>Choose a Challenge Rating (CR) range to see how much coin the creature has.</p>
+
+    <select id="crRange">
+      <option value="0-4">CR 0-4</option>
+      <option value="5-10">CR 5-10</option>
+      <option value="11-16">CR 11-16</option>
+      <option value="17-20">CR 17-20</option>
+      <option value="21+">CR 21+</option>
+    </select>
+
+    <button id="coinButton">Roll for Coins!</button>
+    <div id="coinResult" class="result"></div>
+  </section>
+
+  <!-- MAGIC ITEMS -->
+  <section class="generator">
+    <h2>🪄 Random Magic Item Generator</h2>
+    <p>Select a rarity tier and find a wondrous item of power!</p>
+
+    <select id="raritySelect">
+      <option value="common">Common</option>
+      <option value="uncommon">Uncommon</option>
+      <option value="rare">Rare</option>
+      <option value="veryRare">Very Rare</option>
+      <option value="legendary">Legendary</option>
+    </select>
+
+    <button id="magicButton">Reveal Magic Item!</button>
+    <div id="magicResult" class="result"></div>
+  </section>
+
+  <!-- TRINKETS -->
+  <section class="generator">
+    <h2>🎁 Random Trinket Generator</h2>
+    <p>Discover a random item of curiosity from the world of D&D.</p>
+
+    <button id="trinketButton">Find a Trinket!</button>
+    <div id="trinketResult" class="result"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
